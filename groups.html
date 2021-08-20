@@ -18,59 +18,99 @@
 </head>
 
 <body>
-    <div class="skyBlue">
-        <header class="py-3 border-bottom">
-            <div class="container d-flex flex-wrap justify-content-center">
-                <a href="index.html"
-                    class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none text-white fs-3">
-                    <img class="img-fluid logo" src="images/logo-white.png" alt="">
-                    Lu Social-Platform
-                </a>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-            </div>
-        </header>
-    </div>
-
-    <nav class="navbar navbar-expand-lg skyBlue" ick aria-label="Fourth navbar example">
+    <header class="p-3 sticky-top bg-light">
         <div class="container">
-            <a class="navbar-brand d-sm-block d-lg-none" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars transition bar"></i>
-            </button>
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="#" class="d-flex align-items-center pb-1 mb-lg-0 text-dark text-decoration-none fs-2 fw-bold">
+                    LUSP
+                    <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg> -->
+                </a>
 
-            <div class="collapse mtnav navbar-collapse" id="navbarsExample04">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link text-white fs-5" aria-current="page" href="social.html">Home</a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-4">
+                    <li><a href="social.html" class="nav-link px-2 link-secondary">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            Home</a>
                     </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="friends.html">Friends</a>
+                    <li><a href="friends.html" class="nav-link px-2 link-dark">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            Connection</a>
                     </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="clubs.html">Clubs</a>
+                    <li><a href="innovation.html" class="nav-link px-2 link-dark">
+                            <i class="fas fa-lightbulb"></i>
+                            Innovation</a>
                     </li>
-                    <li class="nav-item ps-4 active">
-                        <a class="nav-link text-white fs-5" href="#">Groups</a>
+                    <li><a href="message.html" class="nav-link px-2 link-dark">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            Messaging</a>
                     </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="#">Innovation</a>
-                    </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="message.html">Messaging</a>
-                    </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="#">Notification</a>
-                    </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="#">Profile</a>
+                    <!-- <li><a href="#" class="nav-link px-2 link-dark">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            Notification</a>
+                    </li> -->
+                    <li class="dropdown">
+                        <a class="nav-link px-2 link-dark" data-bs-toggle="dropdown" href="allNotification.html">
+                            <i class="fa fa-bell-o position-relative" aria-hidden="true"><span
+                                    class="notiCount text-danger fw-bold">5</span></i>
+                            Notification</a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <span class="dropdown-item dropdown-header">5 Notifications</span>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users mr-1"></i> Jahed liked your post
+                                <div class="text-muted text-sm">12 hours</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-users mr-1"></i>Tanvir commented your post
+                                <div class="text-muted text-sm">12 hours</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <i class="fas fa-file mr-1"></i> 3 new reports
+                                <div class="text-muted text-sm">2 days</div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="allnotification.html" class="dropdown-item dropdown-footer">See All
+                                Notifications</a>
+                        </div>
                     </li>
                 </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown text-end" style="font-size: 20px;">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="clubs.html">Clubs</a></li>
+                        <li><a class="dropdown-item" href="groups.html">Groups</a></li>
+                        <li><a class="dropdown-item" href="setting.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown text-end ps-3">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/Jahedpic.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="setting.html">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
 
     <main>
 

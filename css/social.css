@@ -83,14 +83,26 @@
   background-position: center;
 }
 .clubPosition {
-  position: relative;
-  top: -20px;
+  position: absolute;
+  top: -75px;
   left: 10%;
 }
 .clubProfile {
-  width: 190px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
+}
+.userProfile {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+.userPosition {
+  position: absolute;
+  top: -45%;
+  left: 5%;
+  overflow: hidden;
+  clear: both;
 }
 .active {
   border-bottom: 2px solid #000;
@@ -108,9 +120,4 @@
   width: 100%;
   height: 20rem;
   background-position: 50% 30%;
-}
-.userPosition {
-  position: relative;
-  top: -110px;
-  left: 10%;
 }
