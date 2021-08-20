@@ -18,66 +18,43 @@
 </head>
 
 <body>
-    <div class="skyBlue">
-        <header class="py-3 border-bottom">
-            <div class="container d-flex flex-wrap justify-content-center">
-                <a href="index.html"
-                    class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none text-white fs-3">
-                    <img class="img-fluid logo" src="images/logo-white.png" alt="">
-                    Lu Social-Platform
-                </a>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-            </div>
-        </header>
-    </div>
 
-    <nav class="navbar navbar-expand-lg skyBlue sticky-top" ick aria-label="Fourth navbar example">
+    <header class="p-3 sticky-top bg-light">
         <div class="container">
-            <a class="navbar-brand d-sm-block d-lg-none" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-                aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars transition bar"></i>
-            </button>
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="#" class="d-flex align-items-center pb-1 mb-lg-0 text-dark text-decoration-none fs-2 fw-bold">
+                    LUSP
+                    <!-- <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg> -->
+                </a>
 
-            <div class="collapse mtnav navbar-collapse" id="navbarsExample04">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white fs-5" aria-current="page" href="#">Home</a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 ms-4">
+                    <li><a href="social.html" class="nav-link px-2 link-secondary">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            Home</a>
                     </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="friends.html">Friends</a>
+                    <li><a href="friends.html" class="nav-link px-2 link-dark">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            Connection</a>
                     </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="clubs.html">Clubs</a>
+                    <li><a href="innovation.html" class="nav-link px-2 link-dark">
+                            <i class="fas fa-lightbulb"></i>
+                            Innovation</a>
                     </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="groups.html">Groups</a>
+                    <li><a href="message.html" class="nav-link px-2 link-dark">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            Messaging</a>
                     </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="#">Innovation</a>
-                    </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="message.html">Messaging</a>
-                    </li>
-
-                    <!-- <li class="dropdown">
-                                    <a href="#"
-                                        class="d-block link-dark text-decoration-none dropdown-toggle nav-link link-dark ps-4 px-2"
-                                        id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">More
-                                    </a>
-                                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-                                        <li><a class="dropdown-item" href="#">Photos</a></li>
-                                        <li><a class="dropdown-item" href="#">Videos</a></li>
-                                        <li><a class="dropdown-item" href="#">Events</a></li>
-                                    </ul>
-                                </li> -->
-
-                    <li class="nav-item dropdown ps-4">
-                        <a class="nav-link text-white fs-5" data-bs-toggle="dropdown" href="#">
-                            Notificaion
-                        </a>
+                    <!-- <li><a href="#" class="nav-link px-2 link-dark">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            Notification</a>
+                    </li> -->
+                    <li class="dropdown">
+                        <a class="nav-link px-2 link-dark" data-bs-toggle="dropdown" href="allNotification.html">
+                            <i class="fa fa-bell-o position-relative" aria-hidden="true"><span
+                                    class="notiCount text-danger fw-bold">5</span></i>
+                            Notification</a>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                             <span class="dropdown-item dropdown-header">5 Notifications</span>
                             <div class="dropdown-divider"></div>
@@ -100,13 +77,30 @@
                                 Notifications</a>
                         </div>
                     </li>
-                    <li class="nav-item ps-4">
-                        <a class="nav-link text-white fs-5" href="#">Profile</a>
-                    </li>
                 </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/Jahedpic.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="setting.html">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
 
     <main>
         <section id="feed">
@@ -397,7 +391,7 @@
                                                     class="pe-2">25</span>comment</a>
                                         </div>
                                     </div>
-                                    <hr id="hr">
+                                    <hr class="hr">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="d-flex align-items-center ps-5">
                                             <i class="fa fa-heart-o skyColor" aria-hidden="true"></i>
@@ -412,7 +406,7 @@
                                             <p class="ps-2 pt-3 pe-5">Share</p>
                                         </div>
                                     </div>
-                                    <hr id="hr">
+                                    <hr class="hr">
                                     <!-- Comment Area -->
                                     <div id="commentShowArea">
                                         <div class="d-flex justify-content-between position-relative pt-2">
